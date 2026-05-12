@@ -13,24 +13,43 @@
   --sz-lg: 32px;
   --sz-xl-lg: 48px;
   --sz-xl: 64px;
+  
   --full-w: 100%;
+  --full-vw: 100vw;
+  --full-h: 100%;
+  --full-vh: 100vh;
 }
 
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--sz-sm);
+}
+
+.page .toolbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
 .container-movies {
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(128px, 1fr));
   gap: var(--sz-sm);
 }
 
 .card-movie {
-  width: var(--full-w);
+  max-width: var(--full-w);
+  display: flex;
+  flex-direction: column;
 }
 
 
 .card-movie .container-cover img {
-  width: var(--full-w);
+  width: 100%;
 }

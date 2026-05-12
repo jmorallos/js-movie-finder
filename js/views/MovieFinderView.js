@@ -10,7 +10,7 @@ export function movieFinderView() {
             <div class="wrap-filter"><input type="text" /></div>
             <div class="wrap-filter">
               <select class="select-category">
-
+                <option value="all">All</option>
               </select>
             </div>
           </div>
