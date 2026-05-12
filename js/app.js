@@ -1,9 +1,9 @@
-import { MovieFinderView } from "./views/MovieFinderView.js";
+import { movieFinderView } from "./views/MovieFinderView.js";
 
 const root = document.querySelector('#root');
 
 function render() {
-  root.innerHTML = MovieFinderView();
+  root.innerHTML = movieFinderView();
 }
 
 render();
