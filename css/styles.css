@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  outline: 0.3px solid rgba(0,0,0,0.3);
 }
 
 :root {
@@ -14,4 +13,24 @@
   --sz-lg: 32px;
   --sz-xl-lg: 48px;
   --sz-xl: 64px;
+  --full-w: 100%;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container-movies {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--sz-sm);
+}
+
+.card-movie {
+  width: var(--full-w);
+}
+
+
+.card-movie .container-cover img {
+  width: var(--full-w);
 }

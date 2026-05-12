@@ -1,4 +1,4 @@
-export function MovieCards(movie) {
+export function movieCards(movie) {
   return /* html */ `
     <article class="card-movie">
       <div class="container-cover">
